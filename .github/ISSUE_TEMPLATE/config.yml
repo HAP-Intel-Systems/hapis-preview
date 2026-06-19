@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: HAPIS Engine website
+    url: https://hapintel.com
+    about: Product overview, documentation, and pricing.
+  - name: Email the team
+    url: mailto:contact@hapintel.com
+    about: For private, security, or commercial inquiries.

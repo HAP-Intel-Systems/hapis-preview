@@ -1,0 +1,51 @@
+name: Bug report
+description: Something in the HAPIS Engine preview API behaved unexpectedly.
+title: "[Bug]: "
+labels: ["bug", "preview-feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing the HAPIS Engine preview.
+        **Please do not include API keys, tokens, or other secrets in this report.**
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Endpoint(s) called and a minimal, sanitized request payload.
+      render: bash
+    validations:
+      required: true
+  - type: input
+    id: image
+    attributes:
+      label: Image digest
+      description: >-
+        Output of
+        `docker inspect --format '{{index .RepoDigests 0}}' ghcr.io/hap-intel-systems/hapis-api:latest`
+      placeholder: "ghcr.io/hap-intel-systems/hapis-api@sha256:..."
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, CPU architecture, and `docker --version`.
+      placeholder: "macOS 14 (Apple Silicon), Docker 27.x"
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Container logs or error output, with any secrets removed.
+      render: shell
+    validations:
+      required: false

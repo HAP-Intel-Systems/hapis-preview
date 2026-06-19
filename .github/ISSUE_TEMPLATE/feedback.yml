@@ -1,0 +1,32 @@
+name: Feedback / feature request
+description: Share impressions, missing capabilities, or ideas for the preview.
+title: "[Feedback]: "
+labels: ["feedback", "preview-feedback"]
+body:
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Link budget API
+        - Coverage / PDF report
+        - NTN simulation
+        - Image / install experience
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: feedback
+    attributes:
+      label: Your feedback
+      description: What worked well, what didn't, or what you'd like to see.
+    validations:
+      required: true
+  - type: textarea
+    id: usecase
+    attributes:
+      label: What are you trying to do?
+      description: A bit about your use case (academic research, network planning, etc.) helps us prioritize.
+    validations:
+      required: false
