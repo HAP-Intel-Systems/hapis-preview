@@ -1,0 +1,60 @@
+HAPIS Engine — Proprietary Software License
+Copyright (c) 2026 HAP Intel Systems (Oswaldo Hernández Arrambide).
+All rights reserved.
+
+This software and associated materials (the "Software") — including the HAPIS
+Engine, its source code, container images, models, documentation, and any
+derivative output — are the proprietary and confidential property of
+HAP Intel Systems. The Software is licensed, not sold. No title or ownership
+is transferred.
+
+1. EVALUATION GRANT
+   Subject to the terms below, HAP Intel Systems grants you a limited,
+   non-exclusive, non-transferable, revocable license to pull and run the
+   publicly published preview container image of the Software solely to
+   evaluate its functionality for your internal, non-production use.
+
+2. RESTRICTIONS
+   Except as expressly permitted in Section 1, you may NOT, in whole or in
+   part:
+   (a) copy, reproduce, publish, distribute, sublicense, sell, rent, lease,
+       or otherwise make the Software available to any third party;
+   (b) modify, adapt, translate, or create derivative works of the Software;
+   (c) reverse engineer, decompile, disassemble, or otherwise attempt to
+       derive the source code, structure, or algorithms of the Software,
+       except to the limited extent this restriction is prohibited by
+       applicable law;
+   (d) use the Software for any commercial, production, or revenue-generating
+       purpose;
+   (e) remove, obscure, or alter any proprietary notices, labels, or marks.
+
+   Any use beyond the Evaluation Grant requires a separate written license
+   agreement with HAP Intel Systems. For commercial or production use,
+   contact: contact@hapintel.com.
+
+3. RESERVATION OF RIGHTS
+   All rights not expressly granted herein are reserved by HAP Intel Systems.
+   The physics models implemented by the Software are based on public ITU-R
+   and 3GPP recommendations; this license covers the Software's expression,
+   implementation, and packaging, not those underlying public standards.
+
+4. TERMINATION
+   This license terminates automatically upon any breach, or at the
+   discretion of HAP Intel Systems. Upon termination you must cease all use
+   and destroy all copies of the Software in your possession.
+
+5. NO WARRANTY
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. RESULTS ARE
+   MODEL-BASED ESTIMATES FOR PLANNING AND RESEARCH AND MUST NOT BE RELIED
+   UPON AS THE SOLE BASIS FOR OPERATIONAL OR SAFETY-CRITICAL DECISIONS.
+
+6. LIMITATION OF LIABILITY
+   IN NO EVENT SHALL HAP INTEL SYSTEMS BE LIABLE FOR ANY CLAIM, DAMAGES, OR
+   OTHER LIABILITY, WHETHER IN CONTRACT, TORT, OR OTHERWISE, ARISING FROM,
+   OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+7. GOVERNING LAW
+   This license is governed by the laws of Mexico, with exclusive
+   jurisdiction in the courts of Guadalajara, Jalisco.
