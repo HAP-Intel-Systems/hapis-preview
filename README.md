@@ -69,12 +69,37 @@ The SBOM attestation can be fetched separately with `cosign download attestation
 
 ---
 
-## A first request
+## Prove it's real — public self-test (no account needed)
 
-With the container running, the interactive docs at `/docs` let you try every endpoint in the
-browser. Combined link-budget and coverage routes live under `/v1/link-budgets/*` (including
-`/v1/link-budgets/report` and `/v1/link-budgets/constellation/report` for PDF reports).
-Authentication uses an API key — see the in-container `/docs` for the current schema.
+The container serves an unauthenticated **`GET /v1/selftest`** that runs a fixed set of ITU-R
+reference cases (one per standard — P.525 / P.676 / P.838 / P.840 / P.2108) through the **real
+engine** and returns, for each case, the computed value, the published reference, the delta, the
+tolerance, and pass/fail. It's the quickest way to confirm there's real ITU-R physics behind the
+API — not a mock.
+
+```bash
+docker run -d -p 8000:8000 ghcr.io/hap-intel-systems/hapis-api:latest
+curl -s http://localhost:8000/v1/selftest | python -m json.tool
+```
+
+Or run the included pytest, which asserts every case reproduces its published reference value:
+
+```bash
+pip install pytest
+pytest -v        # from a clone of this repo, with the container running
+```
+
+`/v1/selftest` uses **fixed inputs** — it's a validation surface for credibility, not a general
+calculator.
+
+## Exploring the API
+
+With the container running, the interactive docs at **`/docs`** show every endpoint and schema.
+The product endpoints (link budget, coverage, constellation, PDF reports under
+`/v1/link-budgets/*`) require an **API key**, which this preview does **not** issue — the
+licensing/key system isn't open yet, so those endpoints return `401`. The preview is for
+**evaluating and verifying** the engine (via `/docs`, `/v1/selftest`, and `cosign`), not for
+production use. For commercial access, email **<contact@hapintel.com>**.
 
 ---
 
